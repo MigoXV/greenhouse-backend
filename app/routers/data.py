@@ -6,7 +6,7 @@ router = APIRouter()
 @router.post("/upload/")
 async def upload_data(data: SensorData):
     # 实现数据上传逻辑
-    return {"message": "Data uploaded successfully"}
+    return {"message": "Data uploaded successfully"+str(data)}
 
 @router.get("/query/")
 async def query_data():
